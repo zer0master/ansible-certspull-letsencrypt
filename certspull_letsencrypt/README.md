@@ -12,8 +12,8 @@ Role Variables
 --------------
 
 Set the following variables via a mechanism like `host_vars/(hostname)`, your playbook, or the ansible command line:
-* `certs_remote_folder` : remote pathspec
-* `certs_local_folder` : local pathspec
+* `certs_remote_prefix` : remote pathspec
+* `certs_local_prefix` : local pathspec
 * override the `cert_files` list if you're using some other naming convention
 
 Dependencies
