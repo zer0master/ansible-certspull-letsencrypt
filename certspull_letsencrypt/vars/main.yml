@@ -1,9 +1,8 @@
 ---
 # set based on ansible precedence rules (host_vars/(hostname), command line, etc.)}
 #
-# cert_user: (set elsewhere)
-# src_prefix: "/home/{{ cert_user }}/certs"
-# dest_prefix: "roles/{{ role_needing_certs }}/files/certs"
+# certs_remote_prefix: (remote base with certs arranged under fqdn-names subfolders)
+# certs_local_prefix: (local files/ folder under role transferring certs later)
 cert_files:
   - cert.pem
   - chain.pem

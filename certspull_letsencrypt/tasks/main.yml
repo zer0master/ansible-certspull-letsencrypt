@@ -1,8 +1,8 @@
 ---
 - name: pull designated certs from host
   ansible.builtin.fetch:
-    src: "{{ src_prefix }}/{{ server_fqdn }}/{{ item }}"
-    dest: "{{ dest_prefix }}/{{ server_fqdn }}/"
+    src: "{{ certs_remote_prefix }}/{{ server_fqdn }}/{{ item }}"
+    dest: "{{ certs_local_prefix }}/{{ server_fqdn }}/"
     # destination folder(s) auto-created
     flat: yes
     fail_on_missing: yes

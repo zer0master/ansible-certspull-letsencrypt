@@ -29,8 +29,8 @@ Including an example of how to use your role (for instance, with variables passe
     - hosts: servers
       roles:
          - role: certspull_letsencrypt  # or renamed role via requirements.yml
-           certs_remote_folder: /home/certuser/certs
-           certs_local_folder: roles/nginx/files/certs
+           certs_remote_prefix: /home/certuser/certs
+           certs_local_prefix: roles/nginx/files/certs
 ```
 License
 -------
