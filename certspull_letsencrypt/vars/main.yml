@@ -1,0 +1,12 @@
+---
+# set based on ansible precedence rules (host_vars/(hostname), command line, etc.)}
+#
+# cert_user: (set elsewhere)
+# src_prefix: "/home/{{ cert_user }}/certs"
+# dest_prefix: "roles/{{ role_needing_certs }}/files/certs"
+cert_files:
+  - cert.pem
+  - chain.pem
+  - fullchain.pem
+  - privkey.pem
+
